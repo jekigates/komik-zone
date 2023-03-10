@@ -130,7 +130,7 @@
                             <a class="nav-link" href="<?= base_url('faq') ?>">FAQ</a>
                         </li>
                     </ul>
-                    <form class="d-flex" role="search">
+                    <form class="d-flex" role="search" action="<?= base_url('daftar_komik') ?>">
                         <div class="input-group">
                             <input type="text" class="form-control" placeholder="Cari..." aria-label="Search">
                             <button class="btn btn-outline-primary" type="submit">
