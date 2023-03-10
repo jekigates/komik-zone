@@ -33,6 +33,10 @@
             color: var(--bs-primary);
         }
 
+        .carousel:hover {
+            cursor: pointer;
+        }
+
         .carousel-img {
             height: 28rem;
             object-fit: cover;
@@ -47,6 +51,7 @@
             width: 100%;
             height: 100%;
             background-color: rgba(0, 0, 0, 0.1);
+            border-radius: 0.75rem;
         }
 
         .carousel-caption {
@@ -68,26 +73,49 @@
             padding-left: 4rem;
             padding-right: 4rem;
         }
+
+        .comic-col {
+            cursor: pointer;
+        }
+
+        .comic-col .border {
+            transition: border-color 0.2s ease-in-out;
+        }
+
+        .comic-col .stars, .comic-col h5, .comic-col a{
+            transition: color 0.3s ease-in-out;
+        }
+
+        .comic-col:hover .border {
+            border-color: var(--bs-primary) !important;
+        }
+
+        .comic-col:hover h5,
+        .comic-col:hover a,
+        .comic-col:hover .stars,
+        .comic-col:hover p {
+            color: var(--bs-primary) !important; /* set the text color to bs-primary */
+        }
     </style>
 </head>
 <body style="background-color: #F2F2F2">
     <header>
         <nav class="navbar navbar-expand-lg bg-white py-4">
             <div class="container-fluid container-lg">
-                <a class="navbar-brand bg-primary text-white px-3 rounded" href="#">KomikZone</a>
+                <a class="navbar-brand bg-primary text-white px-3 rounded" href="">KomikZone</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav mx-auto my-2 my-lg-0">
                         <li class="nav-item me-lg-4">
-                            <a class="nav-link active" aria-current="page" href="#">Home</a>
+                            <a class="nav-link active" aria-current="page" href="">Home</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Daftar Komik</a>
+                            <a class="nav-link" href="">Daftar Komik</a>
                         </li>
                         <li class="nav-item ms-lg-4">
-                            <a class="nav-link" href="#">FAQ</a>
+                            <a class="nav-link" href="">FAQ</a>
                         </li>
                     </ul>
                     <form class="d-flex" role="search">
@@ -106,10 +134,10 @@
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav ms-auto my-2 my-lg-0">
                         <li class="nav-item me-lg-2 mb-3 mb-lg-0">
-                            <a class="nav-link btn btn-primary text-white px-3" aria-current="page" href="#">Login</a>
+                            <a class="nav-link btn btn-primary text-white px-3" aria-current="page" href="">Login</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link btn btn-outline-primary text-primary px-3" href="#">Register</a>
+                            <a class="nav-link btn btn-outline-primary text-primary px-3" href="">Register</a>
                         </li>
                     </ul>
                 </div>
