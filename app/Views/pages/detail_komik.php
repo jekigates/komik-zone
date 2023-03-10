@@ -14,13 +14,13 @@
     <div class="row mx-0 bg-white rounded">
         <div class="col-12 p-4">
             <div class="row mb-4">
-                <div class="col-6 chapter-col">
+                <div class="col-6 chapter-col" onclick="window.location.href = '<?= base_url('baca_komik') ?>'">
                     <div class="border rounded p-3">
                         <p class="mb-1">Chapter Awal</p>
                         <h6 class="mb-0 fw-bold text-primary">Chapter 1</h6>
                     </div>
                 </div>
-                <div class="col-6 chapter-col">
+                <div class="col-6 chapter-col" onclick="window.location.href = '<?= base_url('baca_komik') ?>'">
                     <div class="border rounded p-3 text-end">
                         <p class="mb-1">Chapter Akhir</p>
                         <h6 class="mb-0 fw-bold text-primary">Chapter 76</h6>
@@ -100,7 +100,7 @@
             <h4 class="fw-bold mb-2">Daftar Chapter</h4>
 
             <div class="row">
-                <div class="col-lg-6 col-12 chapter-col" style="padding-top: calc(var(--bs-gutter-x) * .5); padding-bottom: calc(var(--bs-gutter-x) * .5);">
+                <div class="col-lg-6 col-12 chapter-col" style="padding-top: calc(var(--bs-gutter-x) * .5); padding-bottom: calc(var(--bs-gutter-x) * .5);" onclick="window.location.href = '<?= base_url('baca_komik') ?>'" onclick="window.location.href = '<?= base_url('baca_komik') ?>'">
                     <div class="border rounded p-3 d-flex justify-content-between">
                         <div>
                             <h6 class="mb-1 fw-bold text-primary">Chapter 76</h6>
@@ -112,7 +112,7 @@
                         </button>
                     </div>
                 </div>
-                <div class="col-lg-6 col-12 chapter-col" style="padding-top: calc(var(--bs-gutter-x) * .5); padding-bottom: calc(var(--bs-gutter-x) * .5);">
+                <div class="col-lg-6 col-12 chapter-col" style="padding-top: calc(var(--bs-gutter-x) * .5); padding-bottom: calc(var(--bs-gutter-x) * .5);" onclick="window.location.href = '<?= base_url('baca_komik') ?>'">
                     <div class="border rounded p-3 d-flex justify-content-between">
                         <div>
                             <h6 class="mb-1 fw-bold text-primary">Chapter 75</h6>
@@ -124,7 +124,7 @@
                         </button>
                     </div>
                 </div>
-                <div class="col-lg-6 col-12 chapter-col" style="padding-top: calc(var(--bs-gutter-x) * .5); padding-bottom: calc(var(--bs-gutter-x) * .5);">
+                <div class="col-lg-6 col-12 chapter-col" style="padding-top: calc(var(--bs-gutter-x) * .5); padding-bottom: calc(var(--bs-gutter-x) * .5);" onclick="window.location.href = '<?= base_url('baca_komik') ?>'">
                     <div class="border rounded p-3 d-flex justify-content-between">
                         <div>
                             <h6 class="mb-1 fw-bold text-primary">Chapter 74</h6>
@@ -136,7 +136,7 @@
                         </button>
                     </div>
                 </div>
-                <div class="col-lg-6 col-12 chapter-col" style="padding-top: calc(var(--bs-gutter-x) * .5); padding-bottom: calc(var(--bs-gutter-x) * .5);">
+                <div class="col-lg-6 col-12 chapter-col" style="padding-top: calc(var(--bs-gutter-x) * .5); padding-bottom: calc(var(--bs-gutter-x) * .5);" onclick="window.location.href = '<?= base_url('baca_komik') ?>'">
                     <div class="border rounded p-3 d-flex justify-content-between">
                         <div>
                             <h6 class="mb-1 fw-bold text-primary">Chapter 73</h6>
@@ -149,32 +149,6 @@
                     </div>
                 </div>
             </div>
-        </div>
-    </div>
-</div>
-
-<div class="container-fluid container-lg">
-    <div class="row mx-0 bg-white rounded">
-        <div class="col-12 p-4">
-            <div id="disqus_thread"></div>
-            <script>
-                /**
-                *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
-                *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables    */
-                /*
-                var disqus_config = function () {
-                this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable
-                this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
-                };
-                */
-                (function() { // DON'T EDIT BELOW THIS LINE
-                var d = document, s = d.createElement('script');
-                s.src = 'https://komik-zone.disqus.com/embed.js';
-                s.setAttribute('data-timestamp', +new Date());
-                (d.head || d.body).appendChild(s);
-                })();
-            </script>
-            <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
         </div>
     </div>
 </div>

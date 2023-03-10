@@ -102,6 +102,12 @@
         .accordion-item {
             border: var(--bs-accordion-border-width) solid var(--bs-accordion-border-color) !important;
         }
+
+        .bottom-navbar {
+            position: fixed;
+            bottom: 0;
+            left: 0;
+        }
     </style>
 </head>
 <body style="background-color: #F2F2F2">

@@ -62,11 +62,11 @@
                 <div
                     class="col-lg-6 col-12 comic-col"
                     style="padding-top: calc(var(--bs-gutter-x) * 0.5); padding-bottom: calc(var(--bs-gutter-x) * 0.5)"
-                    onclick="window.location.href = '<?= base_url('detail_komik/') ?>'"
+                    onclick="window.location.href = '<?= base_url('detail_komik') ?>'"
                 >
                     <div class="d-flex border rounded p-2">
                         <img
-                            src="<?= base_url('images/comics/reality-quest.jpg') ?>"
+                            src="<?= base_url('images/comics/reality-quest/poster.jpg') ?>"
                             alt="Reality Quest"
                             class="img-fluid rounded"
                             style="width: 7rem; height: 10rem"
@@ -101,7 +101,7 @@
                 <div
                     class="col-lg-6 col-12 comic-col"
                     style="padding-top: calc(var(--bs-gutter-x) * 0.5); padding-bottom: calc(var(--bs-gutter-x) * 0.5)"
-                    onclick="window.location.href = '<?= base_url('detail_komik/') ?>'"
+                    onclick="window.location.href = '<?= base_url('detail_komik') ?>'"
                 >
                     <div class="d-flex border rounded p-2">
                         <img
@@ -140,7 +140,7 @@
                 <div
                     class="col-lg-6 col-12 comic-col"
                     style="padding-top: calc(var(--bs-gutter-x) * 0.5); padding-bottom: calc(var(--bs-gutter-x) * 0.5)"
-                    onclick="window.location.href = '<?= base_url('detail_komik/') ?>'"
+                    onclick="window.location.href = '<?= base_url('detail_komik') ?>'"
                 >
                     <div class="d-flex border rounded p-2">
                         <img
@@ -179,7 +179,7 @@
                 <div
                     class="col-lg-6 col-12 comic-col"
                     style="padding-top: calc(var(--bs-gutter-x) * 0.5); padding-bottom: calc(var(--bs-gutter-x) * 0.5)"
-                    onclick="window.location.href = '<?= base_url('detail_komik/') ?>'"
+                    onclick="window.location.href = '<?= base_url('detail_komik') ?>'"
                 >
                     <div class="d-flex border rounded p-2">
                         <img
@@ -218,7 +218,7 @@
                 <div
                     class="col-lg-6 col-12 comic-col"
                     style="padding-top: calc(var(--bs-gutter-x) * 0.5); padding-bottom: calc(var(--bs-gutter-x) * 0.5)"
-                    onclick="window.location.href = '<?= base_url('detail_komik/') ?>'"
+                    onclick="window.location.href = '<?= base_url('detail_komik') ?>'"
                 >
                     <div class="d-flex border rounded p-2">
                         <img
@@ -257,7 +257,7 @@
                 <div
                     class="col-lg-6 col-12 comic-col"
                     style="padding-top: calc(var(--bs-gutter-x) * 0.5); padding-bottom: calc(var(--bs-gutter-x) * 0.5)"
-                    onclick="window.location.href = '<?= base_url('detail_komik/') ?>'"
+                    onclick="window.location.href = '<?= base_url('detail_komik') ?>'"
                 >
                     <div class="d-flex border rounded p-2">
                         <img
