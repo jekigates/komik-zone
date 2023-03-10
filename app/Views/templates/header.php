@@ -98,6 +98,10 @@
         .chapter-col:hover h6 {
             color: var(--bs-primary) !important; /* set the text color to bs-primary */
         }
+
+        .accordion-item {
+            border: var(--bs-accordion-border-width) solid var(--bs-accordion-border-color) !important;
+        }
     </style>
 </head>
 <body style="background-color: #F2F2F2">
@@ -117,7 +121,7 @@
                             <a class="nav-link" href="">Daftar Komik</a>
                         </li>
                         <li class="nav-item ms-lg-4">
-                            <a class="nav-link" href="">FAQ</a>
+                            <a class="nav-link" href="<?= base_url('faq') ?>">FAQ</a>
                         </li>
                     </ul>
                     <form class="d-flex" role="search">
