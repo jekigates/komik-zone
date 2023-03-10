@@ -1,7 +1,7 @@
 <!doctype html>
 <html>
 <head>
-    <title>KomikZone</title>
+    <title><?php echo $title; ?></title>
     <link rel="stylesheet" type="text/css" href="<?= base_url('css/bootstrap.min.css') ?>">
     <link rel="stylesheet" href="<?= base_url('icons/bootstrap-icons.css') ?>">
     <script src="<?= base_url('js/bootstrap.min.js') ?>"></script>
@@ -74,26 +74,28 @@
             padding-right: 4rem;
         }
 
-        .comic-col {
+        .comic-col, .chapter-col {
             cursor: pointer;
         }
 
-        .comic-col .border {
+        .comic-col .border, .chapter-col .border {
             transition: border-color 0.2s ease-in-out;
         }
 
-        .comic-col .stars, .comic-col h5, .comic-col a{
-            transition: color 0.3s ease-in-out;
+        .comic-col .stars, .comic-col h5, .comic-col a, .chapter-col p, .chapter-col h6{
+            transition: color 0.2s ease-in-out;
         }
 
-        .comic-col:hover .border {
+        .comic-col:hover .border, .chapter-col:hover .border {
             border-color: var(--bs-primary) !important;
         }
 
         .comic-col:hover h5,
         .comic-col:hover a,
         .comic-col:hover .stars,
-        .comic-col:hover p {
+        .comic-col:hover p,
+        .chapter-col:hover p,
+        .chapter-col:hover h6 {
             color: var(--bs-primary) !important; /* set the text color to bs-primary */
         }
     </style>

@@ -51,188 +51,191 @@
 </div>
 
 <div class="container-fluid container-lg my-4">
-    <div class="row bg-white mx-0 rounded-top px-4 pt-4" style="padding-bottom: calc(var(--bs-gutter-x) * .5);">
-        <div class="col-12 d-flex justify-content-between align-items-center">
-            <h4 class="fw-bold mb-0">Komik Update Terbaru</h4>
-            <button class="btn btn-primary">Lihat Lebih</button>
-        </div>
-    </div>
-    <div class="row bg-white mx-0 rounded-bottom px-4" style="padding-bottom: calc(var(--bs-gutter-x) * .5);">
-        <div class="col-lg-6 col-12 comic-col" style="padding-top: calc(var(--bs-gutter-x) * .5); padding-bottom: calc(var(--bs-gutter-x) * .5);">
-            <div class="d-flex border rounded p-2">
-                <img src="<?= base_url('images/comics/reality-quest.jpg') ?>" alt="Reality Quest" class="img-fluid rounded" style="width: 7rem; height: 10rem;">
-                <div style="width: calc(100% - 7rem)" class="ps-3 d-flex justify-content-between flex-column">
-                    <h5 class="fw-bold mb-0">Reality Quest</h5>
-                    <div class="mb-2 text-warning fs-5 stars">
-                        <span class="bi bi-star-fill"></span>
-                        <span class="bi bi-star-fill"></span>
-                        <span class="bi bi-star-fill"></span>
-                        <span class="bi bi-star-fill"></span>
-                        <span class="bi bi-star"></span>
-                    </div>
+    <div class="row mx-0">
+        <div class="col-12 bg-white rounded px-4 pt-4" style="padding-bottom: calc(var(--bs-gutter-x) * .5);">
+            <div class="d-flex justify-content-between align-items-center mb-2">
+                <h4 class="fw-bold mb-0">Komik Update Terbaru</h4>
+                <button class="btn btn-primary">Lihat Lebih</button>
+            </div>
 
-                    <div>
-                        <div class="d-flex justify-content-between">
-                            <a href="" class="text-decoration-none text-primary">Chapter 76</a>
-                            <p class="mb-2 text-black-50">30 menit lalu</p>
-                        </div>
-                        <div class="d-flex justify-content-between">
-                            <a href="" class="text-decoration-none text-primary">Chapter 75</a>
-                            <p class="mb-2 text-black-50">Mar 4, 2023</p>
-                        </div>
-                        <div class="d-flex justify-content-between">
-                            <a href="" class="text-decoration-none text-primary">Chapter 74</a>
-                            <p class="mb-0 text-black-50">Feb 25, 2023</p>
+            <div class="row">
+                <div class="col-lg-6 col-12 comic-col" style="padding-top: calc(var(--bs-gutter-x) * .5); padding-bottom: calc(var(--bs-gutter-x) * .5);">
+                    <div class="d-flex border rounded p-2">
+                        <img src="<?= base_url('images/comics/reality-quest.jpg') ?>" alt="Reality Quest" class="img-fluid rounded" style="width: 7rem; height: 10rem;">
+                        <div style="width: calc(100% - 7rem)" class="ps-3 d-flex justify-content-between flex-column">
+                            <h5 class="fw-bold mb-0">Reality Quest</h5>
+                            <div class="mb-2 text-warning fs-5 stars">
+                                <span class="bi bi-star-fill"></span>
+                                <span class="bi bi-star-fill"></span>
+                                <span class="bi bi-star-fill"></span>
+                                <span class="bi bi-star-fill"></span>
+                                <span class="bi bi-star"></span>
+                            </div>
+        
+                            <div>
+                                <div class="d-flex justify-content-between">
+                                    <a href="" class="text-decoration-none text-primary">Chapter 76</a>
+                                    <p class="mb-2 text-black-50">30 menit lalu</p>
+                                </div>
+                                <div class="d-flex justify-content-between">
+                                    <a href="" class="text-decoration-none text-primary">Chapter 75</a>
+                                    <p class="mb-2 text-black-50">Mar 4, 2023</p>
+                                </div>
+                                <div class="d-flex justify-content-between">
+                                    <a href="" class="text-decoration-none text-primary">Chapter 74</a>
+                                    <p class="mb-0 text-black-50">Feb 25, 2023</p>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
-            </div>
-        </div>
-        <div class="col-lg-6 col-12 comic-col" style="padding-top: calc(var(--bs-gutter-x) * .5); padding-bottom: calc(var(--bs-gutter-x) * .5);">
-            <div class="d-flex border rounded p-2">
-                <img src="<?= base_url('images/comics/kill-the-hero.jpg') ?>" alt="Kill The Hero" class="img-fluid rounded" style="width: 7rem; height: 10rem;">
-                <div style="width: calc(100% - 7rem)" class="ps-3 d-flex justify-content-between flex-column">
-                    <h5 class="fw-bold mb-0">Kill The Hero</h5>
-                    <div class="mb-2 text-warning fs-5 stars">
-                        <span class="bi bi-star-fill"></span>
-                        <span class="bi bi-star-fill"></span>
-                        <span class="bi bi-star-fill"></span>
-                        <span class="bi bi-star"></span>
-                        <span class="bi bi-star"></span>
-                    </div>
-
-                    <div>
-                        <div class="d-flex justify-content-between">
-                            <a href="" class="text-decoration-none text-primary">Chapter 128</a>
-                            <p class="mb-2 text-black-50">4 jam lalu</p>
-                        </div>
-                        <div class="d-flex justify-content-between">
-                            <a href="" class="text-decoration-none text-primary">Chapter 127</a>
-                            <p class="mb-2 text-black-50">Mar 2, 2023</p>
-                        </div>
-                        <div class="d-flex justify-content-between">
-                            <a href="" class="text-decoration-none text-primary">Chapter 126</a>
-                            <p class="mb-0 text-black-50">Feb 18, 2023</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="col-lg-6 col-12 comic-col" style="padding-top: calc(var(--bs-gutter-x) * .5); padding-bottom: calc(var(--bs-gutter-x) * .5);">
-            <div class="d-flex border rounded p-2">
-                <img src="<?= base_url('images/comics/one-piece.jpg') ?>" alt="One Piece" class="img-fluid rounded" style="width: 7rem; height: 10rem;">
-                <div style="width: calc(100% - 7rem)" class="ps-3 d-flex justify-content-between flex-column">
-                    <h5 class="fw-bold mb-0">One Piece</h5>
-                    <div class="mb-2 text-warning fs-5 stars">
-                        <span class="bi bi-star-fill"></span>
-                        <span class="bi bi-star-fill"></span>
-                        <span class="bi bi-star-fill"></span>
-                        <span class="bi bi-star-fill"></span>
-                        <span class="bi bi-star-fill"></span>
-                    </div>
-
-                    <div>
-                        <div class="d-flex justify-content-between">
-                            <a href="" class="text-decoration-none text-primary">Chapter 1077</a>
-                            <p class="mb-2 text-black-50">1 hari lalu</p>
-                        </div>
-                        <div class="d-flex justify-content-between">
-                            <a href="" class="text-decoration-none text-primary">Chapter 1076</a>
-                            <p class="mb-2 text-black-50">1 hari lalu</p>
-                        </div>
-                        <div class="d-flex justify-content-between">
-                            <a href="" class="text-decoration-none text-primary">Chapter 1075</a>
-                            <p class="mb-0 text-black-50">Feb 16, 2023</p>
+                <div class="col-lg-6 col-12 comic-col" style="padding-top: calc(var(--bs-gutter-x) * .5); padding-bottom: calc(var(--bs-gutter-x) * .5);">
+                    <div class="d-flex border rounded p-2">
+                        <img src="<?= base_url('images/comics/kill-the-hero.jpg') ?>" alt="Kill The Hero" class="img-fluid rounded" style="width: 7rem; height: 10rem;">
+                        <div style="width: calc(100% - 7rem)" class="ps-3 d-flex justify-content-between flex-column">
+                            <h5 class="fw-bold mb-0">Kill The Hero</h5>
+                            <div class="mb-2 text-warning fs-5 stars">
+                                <span class="bi bi-star-fill"></span>
+                                <span class="bi bi-star-fill"></span>
+                                <span class="bi bi-star-fill"></span>
+                                <span class="bi bi-star"></span>
+                                <span class="bi bi-star"></span>
+                            </div>
+        
+                            <div>
+                                <div class="d-flex justify-content-between">
+                                    <a href="" class="text-decoration-none text-primary">Chapter 128</a>
+                                    <p class="mb-2 text-black-50">4 jam lalu</p>
+                                </div>
+                                <div class="d-flex justify-content-between">
+                                    <a href="" class="text-decoration-none text-primary">Chapter 127</a>
+                                    <p class="mb-2 text-black-50">Mar 2, 2023</p>
+                                </div>
+                                <div class="d-flex justify-content-between">
+                                    <a href="" class="text-decoration-none text-primary">Chapter 126</a>
+                                    <p class="mb-0 text-black-50">Feb 18, 2023</p>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
-            </div>
-        </div>
-        <div class="col-lg-6 col-12 comic-col" style="padding-top: calc(var(--bs-gutter-x) * .5); padding-bottom: calc(var(--bs-gutter-x) * .5);">
-            <div class="d-flex border rounded p-2">
-                <img src="<?= base_url('images/comics/edens-zero.jpg') ?>" alt="Edens Zero" class="img-fluid rounded" style="width: 7rem; height: 10rem;">
-                <div style="width: calc(100% - 7rem)" class="ps-3 d-flex justify-content-between flex-column">
-                    <h5 class="fw-bold mb-0">Edens Zero</h5>
-                    <div class="mb-2 text-warning fs-5 stars">
-                        <span class="bi bi-star-fill"></span>
-                        <span class="bi bi-star-fill"></span>
-                        <span class="bi bi-star-fill"></span>
-                        <span class="bi bi-star-fill"></span>
-                        <span class="bi bi-star"></span>
-                    </div>
-
-                    <div>
-                        <div class="d-flex justify-content-between">
-                            <a href="" class="text-decoration-none text-primary">Chapter 230</a>
-                            <p class="mb-2 text-black-50">14 jam lalu</p>
-                        </div>
-                        <div class="d-flex justify-content-between">
-                            <a href="" class="text-decoration-none text-primary">Chapter 239</a>
-                            <p class="mb-2 text-black-50">14 jam lalu</p>
-                        </div>
-                        <div class="d-flex justify-content-between">
-                            <a href="" class="text-decoration-none text-primary">Chapter 228</a>
-                            <p class="mb-0 text-black-50">Feb 22, 2023</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="col-lg-6 col-12 comic-col" style="padding-top: calc(var(--bs-gutter-x) * .5); padding-bottom: calc(var(--bs-gutter-x) * .5);">
-            <div class="d-flex border rounded p-2">
-                <img src="<?= base_url('images/comics/spy-x-family.jpg') ?>" alt="Spy X Family" class="img-fluid rounded" style="width: 7rem; height: 10rem;">
-                <div style="width: calc(100% - 7rem)" class="ps-3 d-flex justify-content-between flex-column">
-                    <h5 class="fw-bold mb-0">Spy X Family</h5>
-                    <div class="mb-2 text-warning fs-5 stars">
-                        <span class="bi bi-star-fill"></span>
-                        <span class="bi bi-star-fill"></span>
-                        <span class="bi bi-star-fill"></span>
-                        <span class="bi bi-star-fill"></span>
-                        <span class="bi bi-star"></span>
-                    </div>
-
-                    <div>
-                        <div class="d-flex justify-content-between">
-                            <a href="" class="text-decoration-none text-primary">Chapter 76</a>
-                            <p class="mb-2 text-black-50">Mar 6, 2023</p>
-                        </div>
-                        <div class="d-flex justify-content-between">
-                            <a href="" class="text-decoration-none text-primary">Chapter 75</a>
-                            <p class="mb-2 text-black-50">Feb 6, 2023</p>
-                        </div>
-                        <div class="d-flex justify-content-between">
-                            <a href="" class="text-decoration-none text-primary">Chapter 74</a>
-                            <p class="mb-0 text-black-50">Jan 23, 2023</p>
+                <div class="col-lg-6 col-12 comic-col" style="padding-top: calc(var(--bs-gutter-x) * .5); padding-bottom: calc(var(--bs-gutter-x) * .5);">
+                    <div class="d-flex border rounded p-2">
+                        <img src="<?= base_url('images/comics/one-piece.jpg') ?>" alt="One Piece" class="img-fluid rounded" style="width: 7rem; height: 10rem;">
+                        <div style="width: calc(100% - 7rem)" class="ps-3 d-flex justify-content-between flex-column">
+                            <h5 class="fw-bold mb-0">One Piece</h5>
+                            <div class="mb-2 text-warning fs-5 stars">
+                                <span class="bi bi-star-fill"></span>
+                                <span class="bi bi-star-fill"></span>
+                                <span class="bi bi-star-fill"></span>
+                                <span class="bi bi-star-fill"></span>
+                                <span class="bi bi-star-fill"></span>
+                            </div>
+        
+                            <div>
+                                <div class="d-flex justify-content-between">
+                                    <a href="" class="text-decoration-none text-primary">Chapter 1077</a>
+                                    <p class="mb-2 text-black-50">1 hari lalu</p>
+                                </div>
+                                <div class="d-flex justify-content-between">
+                                    <a href="" class="text-decoration-none text-primary">Chapter 1076</a>
+                                    <p class="mb-2 text-black-50">1 hari lalu</p>
+                                </div>
+                                <div class="d-flex justify-content-between">
+                                    <a href="" class="text-decoration-none text-primary">Chapter 1075</a>
+                                    <p class="mb-0 text-black-50">Feb 16, 2023</p>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
-            </div>
-        </div>
-        <div class="col-lg-6 col-12 comic-col" style="padding-top: calc(var(--bs-gutter-x) * .5); padding-bottom: calc(var(--bs-gutter-x) * .5);">
-            <div class="d-flex border rounded p-2">
-                <img src="<?= base_url('images/comics/kanojo-okarishimasu.jpg') ?>" alt="Kanojo Okarishimasu" class="img-fluid rounded" style="width: 7rem; height: 10rem;">
-                <div style="width: calc(100% - 7rem)" class="ps-3 d-flex justify-content-between flex-column">
-                    <h5 class="fw-bold mb-0">Kanojo Okarishimasu</h5>
-                    <div class="mb-2 text-warning fs-5 stars">
-                        <span class="bi bi-star-fill"></span>
-                        <span class="bi bi-star-fill"></span>
-                        <span class="bi bi-star-fill"></span>
-                        <span class="bi bi-star"></span>
-                        <span class="bi bi-star"></span>
+                <div class="col-lg-6 col-12 comic-col" style="padding-top: calc(var(--bs-gutter-x) * .5); padding-bottom: calc(var(--bs-gutter-x) * .5);">
+                    <div class="d-flex border rounded p-2">
+                        <img src="<?= base_url('images/comics/edens-zero.jpg') ?>" alt="Edens Zero" class="img-fluid rounded" style="width: 7rem; height: 10rem;">
+                        <div style="width: calc(100% - 7rem)" class="ps-3 d-flex justify-content-between flex-column">
+                            <h5 class="fw-bold mb-0">Edens Zero</h5>
+                            <div class="mb-2 text-warning fs-5 stars">
+                                <span class="bi bi-star-fill"></span>
+                                <span class="bi bi-star-fill"></span>
+                                <span class="bi bi-star-fill"></span>
+                                <span class="bi bi-star-fill"></span>
+                                <span class="bi bi-star"></span>
+                            </div>
+        
+                            <div>
+                                <div class="d-flex justify-content-between">
+                                    <a href="" class="text-decoration-none text-primary">Chapter 230</a>
+                                    <p class="mb-2 text-black-50">14 jam lalu</p>
+                                </div>
+                                <div class="d-flex justify-content-between">
+                                    <a href="" class="text-decoration-none text-primary">Chapter 239</a>
+                                    <p class="mb-2 text-black-50">14 jam lalu</p>
+                                </div>
+                                <div class="d-flex justify-content-between">
+                                    <a href="" class="text-decoration-none text-primary">Chapter 228</a>
+                                    <p class="mb-0 text-black-50">Feb 22, 2023</p>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-
-                    <div>
-                        <div class="d-flex justify-content-between">
-                            <a href="" class="text-decoration-none text-primary">Chapter 253</a>
-                            <p class="mb-2 text-black-50">18 jam lalu</p>
+                </div>
+                <div class="col-lg-6 col-12 comic-col" style="padding-top: calc(var(--bs-gutter-x) * .5); padding-bottom: calc(var(--bs-gutter-x) * .5);">
+                    <div class="d-flex border rounded p-2">
+                        <img src="<?= base_url('images/comics/spy-x-family.jpg') ?>" alt="Spy X Family" class="img-fluid rounded" style="width: 7rem; height: 10rem;">
+                        <div style="width: calc(100% - 7rem)" class="ps-3 d-flex justify-content-between flex-column">
+                            <h5 class="fw-bold mb-0">Spy X Family</h5>
+                            <div class="mb-2 text-warning fs-5 stars">
+                                <span class="bi bi-star-fill"></span>
+                                <span class="bi bi-star-fill"></span>
+                                <span class="bi bi-star-fill"></span>
+                                <span class="bi bi-star-fill"></span>
+                                <span class="bi bi-star"></span>
+                            </div>
+        
+                            <div>
+                                <div class="d-flex justify-content-between">
+                                    <a href="" class="text-decoration-none text-primary">Chapter 76</a>
+                                    <p class="mb-2 text-black-50">Mar 6, 2023</p>
+                                </div>
+                                <div class="d-flex justify-content-between">
+                                    <a href="" class="text-decoration-none text-primary">Chapter 75</a>
+                                    <p class="mb-2 text-black-50">Feb 6, 2023</p>
+                                </div>
+                                <div class="d-flex justify-content-between">
+                                    <a href="" class="text-decoration-none text-primary">Chapter 74</a>
+                                    <p class="mb-0 text-black-50">Jan 23, 2023</p>
+                                </div>
+                            </div>
                         </div>
-                        <div class="d-flex justify-content-between">
-                            <a href="" class="text-decoration-none text-primary">Chapter 252</a>
-                            <p class="mb-2 text-black-50">3 hari lalu</p>
-                        </div>
-                        <div class="d-flex justify-content-between">
-                            <a href="" class="text-decoration-none text-primary">Chapter 251</a>
-                            <p class="mb-0 text-black-50">Mar 5, 2023</p>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-12 comic-col" style="padding-top: calc(var(--bs-gutter-x) * .5); padding-bottom: calc(var(--bs-gutter-x) * .5);">
+                    <div class="d-flex border rounded p-2">
+                        <img src="<?= base_url('images/comics/kanojo-okarishimasu.jpg') ?>" alt="Kanojo Okarishimasu" class="img-fluid rounded" style="width: 7rem; height: 10rem;">
+                        <div style="width: calc(100% - 7rem)" class="ps-3 d-flex justify-content-between flex-column">
+                            <h5 class="fw-bold mb-0">Kanojo Okarishimasu</h5>
+                            <div class="mb-2 text-warning fs-5 stars">
+                                <span class="bi bi-star-fill"></span>
+                                <span class="bi bi-star-fill"></span>
+                                <span class="bi bi-star-fill"></span>
+                                <span class="bi bi-star"></span>
+                                <span class="bi bi-star"></span>
+                            </div>
+        
+                            <div>
+                                <div class="d-flex justify-content-between">
+                                    <a href="" class="text-decoration-none text-primary">Chapter 253</a>
+                                    <p class="mb-2 text-black-50">18 jam lalu</p>
+                                </div>
+                                <div class="d-flex justify-content-between">
+                                    <a href="" class="text-decoration-none text-primary">Chapter 252</a>
+                                    <p class="mb-2 text-black-50">3 hari lalu</p>
+                                </div>
+                                <div class="d-flex justify-content-between">
+                                    <a href="" class="text-decoration-none text-primary">Chapter 251</a>
+                                    <p class="mb-0 text-black-50">Mar 5, 2023</p>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>

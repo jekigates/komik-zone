@@ -17,7 +17,7 @@ class Pages extends BaseController
             throw new PageNotFoundException($page);
         }
 
-        $data['title'] = ucfirst($page); // Capitalize the first letter
+        $data['title'] = ucwords(str_replace('_', ' ', $page));
 
         return view('templates/header', $data)
             . view('pages/' . $page)

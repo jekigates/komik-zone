@@ -12,15 +12,15 @@
     </div>
 
     <div class="row mx-0 mt-2">
-        <div class="col-12 p-0 bg-white rounded p-4 mb-4">
+        <div class="col-12 bg-white rounded p-4 mb-4">
             <div class="row mb-4">
-                <div class="col-6">
+                <div class="col-6 chapter-col">
                     <div class="border rounded p-3">
                         <p class="mb-1">Chapter Awal</p>
                         <h6 class="mb-0 fw-bold text-primary">Chapter 1</h6>
                     </div>
                 </div>
-                <div class="col-6">
+                <div class="col-6 chapter-col">
                     <div class="border rounded p-3 text-end">
                         <p class="mb-1">Chapter Akhir</p>
                         <h6 class="mb-0 fw-bold text-primary">Chapter 76</h6>
@@ -88,6 +88,65 @@
                 <div class="col-12">
                     <h4 class="fw-bold">Sinopsis</h4>
                     <p class="text-secondary mb-0">Karena ancaman pengganggu sekolah untuk memberinya item game, Ha Do-wan, shuttle game yang tidak beruntung, meninggal setelah bermain game sepanjang malam selama seminggu. Saat dia meninggal, dia dibangkitkan kembali ke ruang kelas satu minggu sebelum dia meninggal… Semuanya sama seperti hari itu. Satu-satunya hal yang berubah adalah mengambang di depannya! Apa? Gunakan keterampilan permainan yang saya mainkan sejauh ini untuk mengalahkan pengganggu?!?!</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="container-fluid container-lg">
+    <div class="row mx-0 mt-2">
+        <div class="col-12 bg-white rounded px-4 pt-4 mb-4" style="padding-bottom: calc(var(--bs-gutter-x) * .5);">
+            <h4 class="fw-bold mb-2">Daftar Chapter</h4>
+
+            <div class="row">
+                <div class="col-lg-6 col-12 chapter-col" style="padding-top: calc(var(--bs-gutter-x) * .5); padding-bottom: calc(var(--bs-gutter-x) * .5);">
+                    <div class="border rounded p-3 d-flex justify-content-between">
+                        <div>
+                            <h6 class="mb-1 fw-bold text-primary">Chapter 76</h6>
+                            <p class="mb-0 text-secondary">4 jam lalu</p>
+                        </div>
+                        <button class="btn btn-outline-primary">
+                            <i class="bi bi-download me-1"></i>
+                            <span>Download</span>
+                        </button>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-12 chapter-col" style="padding-top: calc(var(--bs-gutter-x) * .5); padding-bottom: calc(var(--bs-gutter-x) * .5);">
+                    <div class="border rounded p-3 d-flex justify-content-between">
+                        <div>
+                            <h6 class="mb-1 fw-bold text-primary">Chapter 75</h6>
+                            <p class="mb-0 text-secondary">10 jam lalu</p>
+                        </div>
+                        <button class="btn btn-outline-primary">
+                            <i class="bi bi-download me-1"></i>
+                            <span>Download</span>
+                        </button>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-12 chapter-col" style="padding-top: calc(var(--bs-gutter-x) * .5); padding-bottom: calc(var(--bs-gutter-x) * .5);">
+                    <div class="border rounded p-3 d-flex justify-content-between">
+                        <div>
+                            <h6 class="mb-1 fw-bold text-primary">Chapter 74</h6>
+                            <p class="mb-0 text-secondary">16 jam lalu</p>
+                        </div>
+                        <button class="btn btn-outline-primary">
+                            <i class="bi bi-download me-1"></i>
+                            <span>Download</span>
+                        </button>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-12 chapter-col" style="padding-top: calc(var(--bs-gutter-x) * .5); padding-bottom: calc(var(--bs-gutter-x) * .5);">
+                    <div class="border rounded p-3 d-flex justify-content-between">
+                        <div>
+                            <h6 class="mb-1 fw-bold text-primary">Chapter 73</h6>
+                            <p class="mb-0 text-secondary">24 jam lalu</p>
+                        </div>
+                        <button class="btn btn-outline-primary">
+                            <i class="bi bi-download me-1"></i>
+                            <span>Download</span>
+                        </button>
+                    </div>
                 </div>
             </div>
         </div>
