@@ -11,8 +11,8 @@
         </div>
     </div>
 
-    <div class="row mx-0">
-        <div class="col-12 bg-white rounded p-4">
+    <div class="row mx-0 bg-white rounded">
+        <div class="col-12 p-4">
             <div class="row mb-4">
                 <div class="col-6 chapter-col">
                     <div class="border rounded p-3">
@@ -95,8 +95,8 @@
 </div>
 
 <div class="container-fluid container-lg mb-4">
-    <div class="row mx-0">
-        <div class="col-12 bg-white rounded px-4 pt-4 mb-4" style="padding-bottom: calc(var(--bs-gutter-x) * .5);">
+    <div class="row mx-0 bg-white rounded">
+        <div class="col-12 px-4 pt-4 mb-4" style="padding-bottom: calc(var(--bs-gutter-x) * .5);">
             <h4 class="fw-bold mb-2">Daftar Chapter</h4>
 
             <div class="row">
@@ -154,8 +154,8 @@
 </div>
 
 <div class="container-fluid container-lg">
-    <div class="row mx-0">
-        <div class="col-12 bg-white rounded p-4">
+    <div class="row mx-0 bg-white rounded">
+        <div class="col-12 p-4">
             <div id="disqus_thread"></div>
             <script>
                 /**

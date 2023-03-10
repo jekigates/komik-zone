@@ -1,5 +1,5 @@
-<div class="container-fluid container-lg">
-    <div id="carouselExampleCaptions" class="carousel slide carousel-fade mt-4" data-bs-ride="carousel">
+<div class="container-fluid container-lg mt-4">
+    <div id="carouselExampleCaptions" class="carousel slide carousel-fade" data-bs-ride="carousel">
         <div class="carousel-indicators">
             <button
                 type="button"
@@ -51,17 +51,26 @@
 </div>
 
 <div class="container-fluid container-lg my-4">
-    <div class="row mx-0">
-        <div class="col-12 bg-white rounded px-4 pt-4" style="padding-bottom: calc(var(--bs-gutter-x) * .5);">
+    <div class="row mx-0 bg-white rounded">
+        <div class="col-12 px-4 pt-4" style="padding-bottom: calc(var(--bs-gutter-x) * 0.5)">
             <div class="d-flex justify-content-between align-items-center mb-2">
                 <h4 class="fw-bold mb-0">Komik Update Terbaru</h4>
                 <button class="btn btn-primary">Lihat Lebih</button>
             </div>
 
             <div class="row">
-                <div class="col-lg-6 col-12 comic-col" style="padding-top: calc(var(--bs-gutter-x) * .5); padding-bottom: calc(var(--bs-gutter-x) * .5);">
+                <div
+                    class="col-lg-6 col-12 comic-col"
+                    style="padding-top: calc(var(--bs-gutter-x) * 0.5); padding-bottom: calc(var(--bs-gutter-x) * 0.5)"
+                    onclick="window.location.href = '<?= base_url('detail_komik/') ?>'"
+                >
                     <div class="d-flex border rounded p-2">
-                        <img src="<?= base_url('images/comics/reality-quest.jpg') ?>" alt="Reality Quest" class="img-fluid rounded" style="width: 7rem; height: 10rem;">
+                        <img
+                            src="<?= base_url('images/comics/reality-quest.jpg') ?>"
+                            alt="Reality Quest"
+                            class="img-fluid rounded"
+                            style="width: 7rem; height: 10rem"
+                        />
                         <div style="width: calc(100% - 7rem)" class="ps-3 d-flex justify-content-between flex-column">
                             <h5 class="fw-bold mb-0">Reality Quest</h5>
                             <div class="mb-2 text-warning fs-5 stars">
@@ -71,7 +80,7 @@
                                 <span class="bi bi-star-fill"></span>
                                 <span class="bi bi-star"></span>
                             </div>
-        
+
                             <div>
                                 <div class="d-flex justify-content-between">
                                     <a href="" class="text-decoration-none text-primary">Chapter 76</a>
@@ -89,9 +98,18 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-6 col-12 comic-col" style="padding-top: calc(var(--bs-gutter-x) * .5); padding-bottom: calc(var(--bs-gutter-x) * .5);">
+                <div
+                    class="col-lg-6 col-12 comic-col"
+                    style="padding-top: calc(var(--bs-gutter-x) * 0.5); padding-bottom: calc(var(--bs-gutter-x) * 0.5)"
+                    onclick="window.location.href = '<?= base_url('detail_komik/') ?>'"
+                >
                     <div class="d-flex border rounded p-2">
-                        <img src="<?= base_url('images/comics/kill-the-hero.jpg') ?>" alt="Kill The Hero" class="img-fluid rounded" style="width: 7rem; height: 10rem;">
+                        <img
+                            src="<?= base_url('images/comics/kill-the-hero.jpg') ?>"
+                            alt="Kill The Hero"
+                            class="img-fluid rounded"
+                            style="width: 7rem; height: 10rem"
+                        />
                         <div style="width: calc(100% - 7rem)" class="ps-3 d-flex justify-content-between flex-column">
                             <h5 class="fw-bold mb-0">Kill The Hero</h5>
                             <div class="mb-2 text-warning fs-5 stars">
@@ -101,7 +119,7 @@
                                 <span class="bi bi-star"></span>
                                 <span class="bi bi-star"></span>
                             </div>
-        
+
                             <div>
                                 <div class="d-flex justify-content-between">
                                     <a href="" class="text-decoration-none text-primary">Chapter 128</a>
@@ -119,9 +137,18 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-6 col-12 comic-col" style="padding-top: calc(var(--bs-gutter-x) * .5); padding-bottom: calc(var(--bs-gutter-x) * .5);">
+                <div
+                    class="col-lg-6 col-12 comic-col"
+                    style="padding-top: calc(var(--bs-gutter-x) * 0.5); padding-bottom: calc(var(--bs-gutter-x) * 0.5)"
+                    onclick="window.location.href = '<?= base_url('detail_komik/') ?>'"
+                >
                     <div class="d-flex border rounded p-2">
-                        <img src="<?= base_url('images/comics/one-piece.jpg') ?>" alt="One Piece" class="img-fluid rounded" style="width: 7rem; height: 10rem;">
+                        <img
+                            src="<?= base_url('images/comics/one-piece.jpg') ?>"
+                            alt="One Piece"
+                            class="img-fluid rounded"
+                            style="width: 7rem; height: 10rem"
+                        />
                         <div style="width: calc(100% - 7rem)" class="ps-3 d-flex justify-content-between flex-column">
                             <h5 class="fw-bold mb-0">One Piece</h5>
                             <div class="mb-2 text-warning fs-5 stars">
@@ -131,7 +158,7 @@
                                 <span class="bi bi-star-fill"></span>
                                 <span class="bi bi-star-fill"></span>
                             </div>
-        
+
                             <div>
                                 <div class="d-flex justify-content-between">
                                     <a href="" class="text-decoration-none text-primary">Chapter 1077</a>
@@ -149,9 +176,18 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-6 col-12 comic-col" style="padding-top: calc(var(--bs-gutter-x) * .5); padding-bottom: calc(var(--bs-gutter-x) * .5);">
+                <div
+                    class="col-lg-6 col-12 comic-col"
+                    style="padding-top: calc(var(--bs-gutter-x) * 0.5); padding-bottom: calc(var(--bs-gutter-x) * 0.5)"
+                    onclick="window.location.href = '<?= base_url('detail_komik/') ?>'"
+                >
                     <div class="d-flex border rounded p-2">
-                        <img src="<?= base_url('images/comics/edens-zero.jpg') ?>" alt="Edens Zero" class="img-fluid rounded" style="width: 7rem; height: 10rem;">
+                        <img
+                            src="<?= base_url('images/comics/edens-zero.jpg') ?>"
+                            alt="Edens Zero"
+                            class="img-fluid rounded"
+                            style="width: 7rem; height: 10rem"
+                        />
                         <div style="width: calc(100% - 7rem)" class="ps-3 d-flex justify-content-between flex-column">
                             <h5 class="fw-bold mb-0">Edens Zero</h5>
                             <div class="mb-2 text-warning fs-5 stars">
@@ -161,7 +197,7 @@
                                 <span class="bi bi-star-fill"></span>
                                 <span class="bi bi-star"></span>
                             </div>
-        
+
                             <div>
                                 <div class="d-flex justify-content-between">
                                     <a href="" class="text-decoration-none text-primary">Chapter 230</a>
@@ -179,9 +215,18 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-6 col-12 comic-col" style="padding-top: calc(var(--bs-gutter-x) * .5); padding-bottom: calc(var(--bs-gutter-x) * .5);">
+                <div
+                    class="col-lg-6 col-12 comic-col"
+                    style="padding-top: calc(var(--bs-gutter-x) * 0.5); padding-bottom: calc(var(--bs-gutter-x) * 0.5)"
+                    onclick="window.location.href = '<?= base_url('detail_komik/') ?>'"
+                >
                     <div class="d-flex border rounded p-2">
-                        <img src="<?= base_url('images/comics/spy-x-family.jpg') ?>" alt="Spy X Family" class="img-fluid rounded" style="width: 7rem; height: 10rem;">
+                        <img
+                            src="<?= base_url('images/comics/spy-x-family.jpg') ?>"
+                            alt="Spy X Family"
+                            class="img-fluid rounded"
+                            style="width: 7rem; height: 10rem"
+                        />
                         <div style="width: calc(100% - 7rem)" class="ps-3 d-flex justify-content-between flex-column">
                             <h5 class="fw-bold mb-0">Spy X Family</h5>
                             <div class="mb-2 text-warning fs-5 stars">
@@ -191,7 +236,7 @@
                                 <span class="bi bi-star-fill"></span>
                                 <span class="bi bi-star"></span>
                             </div>
-        
+
                             <div>
                                 <div class="d-flex justify-content-between">
                                     <a href="" class="text-decoration-none text-primary">Chapter 76</a>
@@ -209,9 +254,18 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-6 col-12 comic-col" style="padding-top: calc(var(--bs-gutter-x) * .5); padding-bottom: calc(var(--bs-gutter-x) * .5);">
+                <div
+                    class="col-lg-6 col-12 comic-col"
+                    style="padding-top: calc(var(--bs-gutter-x) * 0.5); padding-bottom: calc(var(--bs-gutter-x) * 0.5)"
+                    onclick="window.location.href = '<?= base_url('detail_komik/') ?>'"
+                >
                     <div class="d-flex border rounded p-2">
-                        <img src="<?= base_url('images/comics/kanojo-okarishimasu.jpg') ?>" alt="Kanojo Okarishimasu" class="img-fluid rounded" style="width: 7rem; height: 10rem;">
+                        <img
+                            src="<?= base_url('images/comics/kanojo-okarishimasu.jpg') ?>"
+                            alt="Kanojo Okarishimasu"
+                            class="img-fluid rounded"
+                            style="width: 7rem; height: 10rem"
+                        />
                         <div style="width: calc(100% - 7rem)" class="ps-3 d-flex justify-content-between flex-column">
                             <h5 class="fw-bold mb-0">Kanojo Okarishimasu</h5>
                             <div class="mb-2 text-warning fs-5 stars">
@@ -221,7 +275,7 @@
                                 <span class="bi bi-star"></span>
                                 <span class="bi bi-star"></span>
                             </div>
-        
+
                             <div>
                                 <div class="d-flex justify-content-between">
                                     <a href="" class="text-decoration-none text-primary">Chapter 253</a>

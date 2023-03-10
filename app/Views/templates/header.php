@@ -8,14 +8,14 @@
     <style>
         @font-face {
             font-family: 'Poppins';
-            src: url('../fonts/Poppins-Regular.ttf') format('truetype');
+            src: url('<?= base_url('fonts/Poppins-Regular.ttf') ?>') format('truetype');
             font-weight: 400;
             font-style: normal;
         }
 
         @font-face {
             font-family: 'Poppins';
-            src: url('../fonts/Poppins-Bold.ttf') format('truetype');
+            src: url('<?= base_url('fonts/Poppins-Bold.ttf') ?>') format('truetype');
             font-weight: 700;
             font-style: normal;
         }
@@ -136,7 +136,7 @@
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav ms-auto my-2 my-lg-0">
                         <li class="nav-item me-lg-2 mb-3 mb-lg-0">
-                            <a class="nav-link btn btn-primary text-white px-3" aria-current="page" href="">Login</a>
+                            <a class="nav-link btn btn-primary text-white px-3" aria-current="page" href="<?= base_url('login') ?>">Login</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link btn btn-outline-primary text-primary px-3" href="">Register</a>
