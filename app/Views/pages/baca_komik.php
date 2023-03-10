@@ -44,6 +44,11 @@
 <div class="container-fluid bottom-navbar nb04">
     <div class="row bg-white py-2">
         <div class="col-4">
+            <button class="btn btn-outline-primary">
+                <i class="bi bi-download"></i>
+            </button>
+        </div>
+        <div class="col-4 text-center">
             <div class="btn-group" role="group" aria-label="Basic outlined example">
                 <button type="button" class="btn btn-outline-primary">
                     <i class="bi bi-chevron-left"></i>
@@ -54,20 +59,15 @@
                 </button>
             </div>
         </div>
-        <div class="col-4 text-center">
-            <button class="btn btn-outline-primary">
-                <i class="bi bi-download"></i>
-            </button>
-        </div>
         <div class="col-4 text-end">
             <div>
                 <button class="btn btn-outline-secondary me-2">
                     <i class="bi bi-arrow-up-circle"></i>
                 </button>
-            <button class="btn btn-outline-primary">
-                <i class="bi bi-download me-1"></i>
-                Full Screen
-            </button>
+                <button class="btn btn-outline-primary">
+                    <i class="bi bi-download me-1"></i>
+                    Full Screen
+                </button>
             </div>
         </div>
     </div>
