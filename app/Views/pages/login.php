@@ -1,4 +1,4 @@
-<div class="container-fluid container-lg mt-4">
+<div class="container-fluid container-lg my-4">
     <div class="row mx-0 justify-content-center">
         <div class="col-xl-6 col-lg-7 col-8 bg-white">
             <div class="row justify-content-center">
@@ -10,29 +10,29 @@
                         <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
                     </div>
         
-                    <div class="mb-2">
+                    <div class="mb-4">
                         <label for="exampleFormControlInput2" class="form-label">Password</label>
                         <input type="email" class="form-control" id="exampleFormControlInput2" placeholder="********">
                     </div>
         
                     <div class="text-end mb-4">
-                        <a href="" class="text-secondary text-decoration-none">Forgot Password?</a>
+                        <a href="" class="text-secondary text-decoration-none">Lupa password?</a>
                     </div>
         
                     <button class="btn btn-primary btn-lg w-100 mb-4">Login</button>
         
                     <div class="text-center mb-4">
-                        <a href="" class="text-secondary text-decoration-none">Belum punya akun? <b class="text-primary">Register</b></a>
+                        <a href="<?= base_url('register') ?>" class="text-secondary text-decoration-none">Belum punya akun? <b class="text-primary">Register</b></a>
                     </div>
         
                     <button class="btn btn-lg w-100 mb-4 text-white" style="background-color: #db4437;">
-                        <i class="bi bi-google me-4"></i>Login Dengan Google
+                        <i class="bi bi-google me-4"></i>Daftar Dengan Google
                     </button>
                     <button class="btn btn-lg w-100 mb-4 text-white" style="background-color: #3b5998;">
-                        <i class="bi bi-facebook me-4"></i>Login Dengan Facebook
+                        <i class="bi bi-facebook me-4"></i>Daftar Dengan Facebook
                     </button>
                     <button class="btn btn-lg w-100 mb-4 text-white" style="background-color: #000000;">
-                        <i class="bi bi-apple me-4"></i>Login Dengan Apple
+                        <i class="bi bi-apple me-4"></i>Daftar Dengan Apple
                     </button>
                 </div>
             </div>

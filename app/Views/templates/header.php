@@ -139,7 +139,7 @@
                             <a class="nav-link btn btn-primary text-white px-3" aria-current="page" href="<?= base_url('login') ?>">Login</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link btn btn-outline-primary text-primary px-3" href="">Register</a>
+                            <a class="nav-link btn btn-outline-primary text-primary px-3" href="<?= base_url('register') ?>">Register</a>
                         </li>
                     </ul>
                 </div>
