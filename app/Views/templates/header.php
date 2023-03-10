@@ -102,14 +102,14 @@
     <header>
         <nav class="navbar navbar-expand-lg bg-white py-4">
             <div class="container-fluid container-lg">
-                <a class="navbar-brand bg-primary text-white px-3 rounded" href="">KomikZone</a>
+                <a class="navbar-brand bg-primary text-white px-3 rounded" href="<?= base_url() ?>">KomikZone</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav mx-auto my-2 my-lg-0">
                         <li class="nav-item me-lg-4">
-                            <a class="nav-link active" aria-current="page" href="">Home</a>
+                            <a class="nav-link active" aria-current="page" href="<?= base_url() ?>">Home</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="">Daftar Komik</a>
