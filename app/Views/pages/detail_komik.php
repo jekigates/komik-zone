@@ -1,4 +1,4 @@
-<div class="container-fluid container-lg">
+<div class="container-fluid container-lg mb-4">
     <div class="row pt-4">
         <div class="col-12">
             <nav style="--bs-breadcrumb-divider: url(&#34;data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='8' height='8'%3E%3Cpath d='M2.5 0L1 1.5 3.5 4 1 6.5 2.5 8l4-4-4-4z' fill='%236c757d'/%3E%3C/svg%3E&#34;);" aria-label="breadcrumb">
@@ -11,8 +11,8 @@
         </div>
     </div>
 
-    <div class="row mx-0 mt-2">
-        <div class="col-12 bg-white rounded p-4 mb-4">
+    <div class="row mx-0">
+        <div class="col-12 bg-white rounded p-4">
             <div class="row mb-4">
                 <div class="col-6 chapter-col">
                     <div class="border rounded p-3">
@@ -94,8 +94,8 @@
     </div>
 </div>
 
-<div class="container-fluid container-lg">
-    <div class="row mx-0 mt-2">
+<div class="container-fluid container-lg mb-4">
+    <div class="row mx-0">
         <div class="col-12 bg-white rounded px-4 pt-4 mb-4" style="padding-bottom: calc(var(--bs-gutter-x) * .5);">
             <h4 class="fw-bold mb-2">Daftar Chapter</h4>
 
@@ -149,6 +149,32 @@
                     </div>
                 </div>
             </div>
+        </div>
+    </div>
+</div>
+
+<div class="container-fluid container-lg">
+    <div class="row mx-0">
+        <div class="col-12 bg-white rounded p-4">
+            <div id="disqus_thread"></div>
+            <script>
+                /**
+                *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+                *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables    */
+                /*
+                var disqus_config = function () {
+                this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable
+                this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+                };
+                */
+                (function() { // DON'T EDIT BELOW THIS LINE
+                var d = document, s = d.createElement('script');
+                s.src = 'https://komik-zone.disqus.com/embed.js';
+                s.setAttribute('data-timestamp', +new Date());
+                (d.head || d.body).appendChild(s);
+                })();
+            </script>
+            <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
         </div>
     </div>
 </div>
