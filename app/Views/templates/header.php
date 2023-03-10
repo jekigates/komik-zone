@@ -24,14 +24,6 @@
             font-family: 'Poppins', sans-serif;
         }
 
-        .fill {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: calc(100vh - 219px);
-            /* 219px is the combined height of the header and footer */
-        }
-
         .nav-link.btn-outline-primary:hover {
             color: var(--bs-white) !important;
         }
@@ -40,12 +32,48 @@
             font-weight: bold;
             color: var(--bs-primary);
         }
+
+        .carousel-img {
+            height: 28rem;
+            object-fit: cover;
+            border-radius: 0.75rem;
+        }
+
+        .carousel-item::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.1);
+        }
+
+        .carousel-caption {
+            display: flex;
+            justify-content: center; /* center horizontally */
+            align-items: center; /* center vertically */
+            flex-direction: column; /* stack content vertically */
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background-color: rgba(0, 0, 0, 0.3);
+            color: #fff;
+            border-radius: 0.75rem;
+        }
+
+        .carousel-caption p {
+            padding-left: 4rem;
+            padding-right: 4rem;
+        }
     </style>
 </head>
-<body class="bg-primary">
+<body style="background-color: #F2F2F2">
     <header>
         <nav class="navbar navbar-expand-lg bg-white py-4">
-            <div class="container">
+            <div class="container-fluid container-lg">
                 <a class="navbar-brand bg-primary text-white px-3 rounded" href="#">KomikZone</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
@@ -74,7 +102,7 @@
             </div>
         </nav>
         <nav class="navbar navbar-expand-lg bg-white border-top">
-            <div class="container">
+            <div class="container-fluid container-lg">
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav ms-auto my-2 my-lg-0">
                         <li class="nav-item me-lg-2 mb-3 mb-lg-0">
