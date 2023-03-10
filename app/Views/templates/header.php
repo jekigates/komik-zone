@@ -108,7 +108,7 @@
     <header>
         <nav class="navbar navbar-expand-lg bg-white py-4">
             <div class="container-fluid container-lg">
-                <a class="navbar-brand bg-primary text-white px-3 rounded" href="<?= base_url() ?>">KomikZone</a>
+                <a class="navbar-brand bg-primary text-white px-3 rounded fw-bold" href="<?= base_url() ?>">KomikZone</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
@@ -118,7 +118,7 @@
                             <a class="nav-link active" aria-current="page" href="<?= base_url() ?>">Home</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="">Daftar Komik</a>
+                            <a class="nav-link" href="<?= base_url('daftar_komik') ?>">Daftar Komik</a>
                         </li>
                         <li class="nav-item ms-lg-4">
                             <a class="nav-link" href="<?= base_url('faq') ?>">FAQ</a>
