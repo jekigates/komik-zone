@@ -1,6 +1,7 @@
 <?php
 
 namespace Config;
+use App\Controllers\UserController;
 use App\Controllers\Pages;
 
 // Create a new instance of our RouteCollection class.
@@ -32,6 +33,8 @@ $routes->set404Override();
 // route since we don't have to scan directories.
 // $routes->get('/', 'Home::index');
 $routes->get('/', 'Pages::view');
+$routes->get('users/(:segment)', [UserController::class, 'view']);
+$routes->get('users', [UserController::class, 'index']);
 $routes->get('pages', [Pages::class, 'index']);
 $routes->get('(:segment)', [Pages::class, 'view']);
 
