@@ -13,20 +13,20 @@
             <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
         </div>
         <div class="carousel-inner">
-            <div class="carousel-item active" data-bs-interval="5000">
+            <div class="carousel-item active" data-bs-interval="5000" onclick="window.location.href = '<?= base_url('detail_komik') ?>'">
                 <img src="<?= base_url('images/banners/one-piece.jpg') ?>" class="d-block w-100 img-fluid carousel-img" alt="One Piece" />
                 <div class="carousel-caption">
                     <h2 class="fw-bold">One Piece</h2>
                     <p>Bergabunglah dengan Luffy dan kru di petualangan epik mereka!</p>
                 </div>
             </div>
-            <div class="carousel-item" data-bs-interval="5000">
+            <div class="carousel-item" data-bs-interval="5000" onclick="window.location.href = '<?= base_url('detail_komik') ?>'">
                 <img
                     src="<?= base_url('images/banners/my-hero-academia.jpg') ?>"
                     class="d-block w-100 img-fluid carousel-img"
                     alt="My Hero Academia"
                 />
-                <div class="carousel-caption">
+                <div class="carousel-caption" onclick="window.location.href = '<?= base_url('detail_komik') ?>'">
                     <h2 class="fw-bold">My Hero Academia</h2>
                     <p>Teman-teman SMA berjuang memperoleh kekuatan super untuk menjadi pahlawan.</p>
                 </div>
@@ -55,7 +55,7 @@
         <div class="col-12 px-4 pt-4" style="padding-bottom: calc(var(--bs-gutter-x) * 0.5)">
             <div class="d-flex justify-content-between align-items-center mb-2">
                 <h4 class="fw-bold mb-0">Komik Update Terbaru</h4>
-                <button class="btn btn-primary">Lihat Lebih</button>
+                <a href="<?= base_url('daftar_komik') ?>" class="btn btn-primary">Lihat Lebih</a>
             </div>
 
             <div class="row">
