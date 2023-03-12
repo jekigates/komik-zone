@@ -2,6 +2,7 @@
 
 namespace Config;
 use App\Controllers\UserController;
+use App\Controllers\AuthController;
 use App\Controllers\Pages;
 
 // Create a new instance of our RouteCollection class.
@@ -33,10 +34,14 @@ $routes->set404Override();
 // route since we don't have to scan directories.
 // $routes->get('/', 'Home::index');
 $routes->get('/', 'Pages::view');
-$routes->get('users/(:segment)', [UserController::class, 'view']);
-$routes->get('users', [UserController::class, 'index']);
-$routes->get('pages', [Pages::class, 'index']);
-$routes->get('(:segment)', [Pages::class, 'view']);
+$routes->get('user/(:segment)', [UserController::class, 'view']);
+$routes->get('user', [UserController::class, 'index']);
+// $routes->get('pages', [Pages::class, 'index']);
+// $routes->get('(:segment)', [Pages::class, 'view']);
+// $routes->get('auth/(:segment)', [AuthController::class, 'view']);
+// $routes->get('register', [AuthController::class, 'register']);
+// $routes->post('process-login', [AuthController::class, 'login']);
+$routes->match(['get', 'post'], 'login', [AuthController::class, 'login']);
 
 /*
  * --------------------------------------------------------------------

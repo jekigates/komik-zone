@@ -17,7 +17,7 @@
         
                     <div class="mb-4">
                         <label for="exampleFormControlInput3" class="form-label">Password</label>
-                        <input type="email" class="form-control" id="exampleFormControlInput3" placeholder="********">
+                        <input type="password" class="form-control" id="exampleFormControlInput3" placeholder="********">
                     </div>
         
                     <button class="btn btn-primary btn-lg w-100 mb-4">Register</button>
