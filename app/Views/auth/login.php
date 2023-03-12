@@ -22,7 +22,7 @@
             
                         <div class="mb-4">
                             <label for="email" class="form-label">Email address</label>
-                            <input type="text" class="form-control <?= session()->getFlashdata('errors')['email'] ? 'is-invalid' : '' ?>" id="email" name="email" placeholder="name@example.com" value="">
+                            <input type="email" class="form-control <?= session()->getFlashdata('errors')['email'] ? 'is-invalid' : '' ?>" id="email" name="email" placeholder="name@example.com" value="">
                             <?php if (session()->getFlashdata('errors')['email']) : ?>
                                 <div class="invalid-feedback">
                                     <?= session()->getFlashdata('errors')['email'] ?>

@@ -36,12 +36,13 @@ $routes->set404Override();
 $routes->get('/', 'Pages::view');
 $routes->get('user/(:segment)', [UserController::class, 'view']);
 $routes->get('user', [UserController::class, 'index']);
-// $routes->get('pages', [Pages::class, 'index']);
-// $routes->get('(:segment)', [Pages::class, 'view']);
 // $routes->get('auth/(:segment)', [AuthController::class, 'view']);
 // $routes->get('register', [AuthController::class, 'register']);
 // $routes->post('process-login', [AuthController::class, 'login']);
 $routes->match(['get', 'post'], 'login', [AuthController::class, 'login']);
+$routes->match(['get', 'post'], 'register', [AuthController::class, 'register']);
+$routes->get('pages', [Pages::class, 'index']);
+$routes->get('(:segment)', [Pages::class, 'view']);
 
 /*
  * --------------------------------------------------------------------
