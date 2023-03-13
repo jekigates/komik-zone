@@ -41,6 +41,7 @@ $routes->get('user', [UserController::class, 'index']);
 // $routes->post('process-login', [AuthController::class, 'login']);
 $routes->match(['get', 'post'], 'login', [AuthController::class, 'login']);
 $routes->match(['get', 'post'], 'register', [AuthController::class, 'register']);
+$routes->get('logout', [AuthController::class, 'logout']);
 $routes->get('pages', [Pages::class, 'index']);
 $routes->get('(:segment)', [Pages::class, 'view']);
 

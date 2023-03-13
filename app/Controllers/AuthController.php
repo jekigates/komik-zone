@@ -50,6 +50,8 @@ class AuthController extends BaseController
 
         // Verify password
         if ($user && password_verify($post['password'], $user['password'])) {
+            // Success login
+            session()->set('user', $user);
             return redirect()->to('/');
         }
         
@@ -101,6 +103,17 @@ class AuthController extends BaseController
         ];
         $userModel->save($user);
 
+        $registeredUser = $userModel->where('email', $post['email'])
+                  ->first();
+        session()->set('user', $registeredUser);
+
         return redirect()->to('/');
+    }
+
+    public function logout() {
+        session()->destroy();
+
+        // Redirect the user to the login page
+        return redirect()->to('/login');
     }
 }

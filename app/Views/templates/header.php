@@ -145,12 +145,21 @@
             <div class="container-fluid container-lg">
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav ms-auto my-2 my-lg-0">
-                        <li class="nav-item me-lg-2 mb-3 mb-lg-0">
-                            <a class="nav-link btn btn-primary text-white px-3" aria-current="page" href="<?= base_url('login') ?>">Login</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link btn btn-outline-primary text-primary px-3" href="<?= base_url('register') ?>">Register</a>
-                        </li>
+                        <?php if (!session()->has('user')) : ?>
+                            <li class="nav-item me-lg-2 mb-3 mb-lg-0">
+                                <a class="nav-link btn btn-primary text-white px-3" href="<?= base_url('login') ?>">Login</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link btn btn-outline-primary text-primary px-3" href="<?= base_url('register') ?>">Register</a>
+                            </li>
+                        <?php else : ?>
+                            <li class="nav-item me-lg-2 mb-3 mb-lg-0">
+                                <a class="nav-link px-3" href="<?= base_url('/') ?>"><?= session()->get('user')['name'] ?></a>
+                            </li>
+                            <li class="nav-item me-lg-2">
+                                <a class="nav-link btn btn-danger text-white px-3" href="<?= base_url('logout') ?>">Logout</a>
+                            </li>
+                        <?php endif ?>
                     </ul>
                 </div>
             </div>
