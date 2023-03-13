@@ -46,7 +46,7 @@
             
                         <div class="mb-4">
                             <label for="password" class="form-label">Password</label>
-                            <input type="password" class="form-control <?= $errors['password'] ? 'is-invalid' : '' ?>" id="password" name="password" placeholder="********" value="" required>
+                            <input type="password" class="form-control <?= $errors['password'] ? 'is-invalid' : '' ?>" id="password" name="password" placeholder="********" value="" minlength="8" required>
                             <?php if ($errors['password']) : ?>
                                 <div class="invalid-feedback">
                                     <?= $errors['password'] ?>

@@ -34,7 +34,7 @@
             
                         <div class="mb-4">
                             <label for="name" class="form-label">Nama lengkap</label>
-                            <input type="text" class="form-control <?= $errors['name'] ? 'is-invalid' : '' ?>" id="name" name="name" placeholder="Name example" required>
+                            <input type="text" class="form-control <?= $errors['name'] ? 'is-invalid' : '' ?>" id="name" name="name" placeholder="Name example" minlength="3" required>
                             <?php if ($errors['name']) : ?>
                                 <div class="invalid-feedback">
                                     <?= $errors['name'] ?>
@@ -48,7 +48,7 @@
     
                         <div class="mb-4">
                             <label for="email" class="form-label">Email address</label>
-                            <input type="text" class="form-control <?= $errors['email'] ? 'is-invalid' : '' ?>" id="email" name="email" placeholder="name@example.com" required>
+                            <input type="email" class="form-control <?= $errors['email'] ? 'is-invalid' : '' ?>" id="email" name="email" placeholder="name@example.com" required>
                             <?php if ($errors['email']) : ?>
                                 <div class="invalid-feedback">
                                     <?= $errors['email'] ?>
@@ -62,7 +62,7 @@
             
                         <div class="mb-4">
                             <label for="password" class="form-label">Password</label>
-                            <input type="password" class="form-control <?= $errors['password'] ? 'is-invalid' : '' ?>" id="password" name="password" placeholder="********" required>
+                            <input type="password" class="form-control <?= $errors['password'] ? 'is-invalid' : '' ?>" id="password" name="password" placeholder="********" minlength="8" required>
                             <?php if ($errors['password']) : ?>
                                 <div class="invalid-feedback">
                                     <?= $errors['password'] ?>
