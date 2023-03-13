@@ -6,18 +6,22 @@
                     <?php
                         $errors = session()->getFlashdata('errors');
                         if (!session()->getFlashdata('errors')) {
+                            // metode get
+                            $errors['account'] = '';
                             $errors['email'] = '';
                             $errors['password'] = '';
                         }  else {
+                            // metode post
+                            $errors['account'] ??= '';
                             $errors['email'] ??= '';
                             $errors['password'] ??= '';
                         }
-                        session()->remove('errors');
+                        session()->destroy();
                     ?>
 
-                    <?php if (session()->getFlashdata('error')) : ?>
+                    <?php if ($errors['account']) : ?>
                         <div class="alert alert-danger mt-4">
-                            <?= session()->getFlashdata('error') ?>
+                            <?= $errors['account'] ?>
                         </div>
                     <?php endif; ?>
                     
@@ -35,7 +39,7 @@
                                 </div>
                             <?php else: ?>
                                 <div class="invalid-feedback">
-                                    The email field is required.
+                                    Email tidak boleh kosong.
                                 </div>
                             <?php endif; ?>
                         </div>
@@ -49,7 +53,7 @@
                                 </div>
                             <?php else: ?>
                                 <div class="invalid-feedback">
-                                    The password field is required.
+                                    Password harus mengandung setidaknya 8 karakter.
                                 </div>
                             <?php endif; ?>
                         </div>

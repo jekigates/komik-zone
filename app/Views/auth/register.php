@@ -4,42 +4,72 @@
             <div class="row justify-content-center">
                 <div class="col-10 rounded p-4">
                     <?php
+                        $errors = session()->getFlashdata('errors');
                         if (!session()->getFlashdata('errors')) {
-                            session()->setFlashdata('errors', ['name' => '', 'email' => '', 'password' => '']);
+                            // metode get
+                            $errors['account'] = '';
+                            $errors['name'] = '';
+                            $errors['email'] = '';
+                            $errors['password'] = '';
+                        }  else {
+                            // metode post
+                            $errors['account'] ??= '';
+                            $errors['name'] ??= '';
+                            $errors['email'] ??= '';
+                            $errors['password'] ??= '';
                         }
+                        session()->destroy();
                     ?>
 
-                    <form action="<?= base_url('/register') ?>" method="post">
+                    <?php if ($errors['account']) : ?>
+                        <div class="alert alert-danger mt-4">
+                            <?= $errors['account'] ?>
+                        </div>
+                    <?php endif; ?>
+
+                    <form action="<?= base_url('/register') ?>" method="post" class="needs-validation" novalidate>
                         <?= csrf_field() ?>
                         
                         <h4 class="fw-bold my-4 text-center">Register To <b class="text-primary">KomikZone</b></h4>
             
                         <div class="mb-4">
                             <label for="name" class="form-label">Nama lengkap</label>
-                            <input type="text" class="form-control <?= session()->getFlashdata('errors')['name'] ? 'is-invalid' : '' ?>" id="name" name="name" placeholder="Name example">
-                            <?php if (session()->getFlashdata('errors')['name']) : ?>
+                            <input type="text" class="form-control <?= $errors['name'] ? 'is-invalid' : '' ?>" id="name" name="name" placeholder="Name example" required>
+                            <?php if ($errors['name']) : ?>
                                 <div class="invalid-feedback">
-                                    <?= session()->getFlashdata('errors')['name'] ?>
+                                    <?= $errors['name'] ?>
+                                </div>
+                            <?php else: ?>
+                                <div class="invalid-feedback">
+                                    Nama harus mengandung setidaknya 3 karakter.
                                 </div>
                             <?php endif; ?>
                         </div>
     
                         <div class="mb-4">
                             <label for="email" class="form-label">Email address</label>
-                            <input type="text" class="form-control <?= session()->getFlashdata('errors')['email'] ? 'is-invalid' : '' ?>" id="email" name="email" placeholder="name@example.com">
-                            <?php if (session()->getFlashdata('errors')['email']) : ?>
+                            <input type="text" class="form-control <?= $errors['email'] ? 'is-invalid' : '' ?>" id="email" name="email" placeholder="name@example.com" required>
+                            <?php if ($errors['email']) : ?>
                                 <div class="invalid-feedback">
-                                    <?= session()->getFlashdata('errors')['email'] ?>
+                                    <?= $errors['email'] ?>
+                                </div>
+                            <?php else: ?>
+                                <div class="invalid-feedback">
+                                    Email tidak boleh kosong.
                                 </div>
                             <?php endif; ?>
                         </div>
             
                         <div class="mb-4">
                             <label for="password" class="form-label">Password</label>
-                            <input type="password" class="form-control <?= session()->getFlashdata('errors')['password'] ? 'is-invalid' : '' ?>" id="password" name="password" placeholder="********">
-                            <?php if (session()->getFlashdata('errors')['password']) : ?>
+                            <input type="password" class="form-control <?= $errors['password'] ? 'is-invalid' : '' ?>" id="password" name="password" placeholder="********" required>
+                            <?php if ($errors['password']) : ?>
                                 <div class="invalid-feedback">
-                                    <?= session()->getFlashdata('errors')['password'] ?>
+                                    <?= $errors['password'] ?>
+                                </div>
+                            <?php else: ?>
+                                <div class="invalid-feedback">
+                                    Password harus mengandung setidaknya 8 karakter.
                                 </div>
                             <?php endif; ?>
                         </div>

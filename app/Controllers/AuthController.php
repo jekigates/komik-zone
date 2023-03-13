@@ -53,7 +53,7 @@ class AuthController extends BaseController
             return redirect()->to('/');
         }
         
-        return redirect()->to('/login')->with('error', 'Invalid email or password.');
+        return redirect()->to('/login')->with('errors', ['account' => 'Akun tidak ditemukan.']);
     }
 
     public function register()
