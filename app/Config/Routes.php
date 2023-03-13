@@ -1,6 +1,8 @@
 <?php
 
 namespace Config;
+use App\Controllers\UserController;
+use App\Controllers\AuthController;
 use App\Controllers\Pages;
 
 // Create a new instance of our RouteCollection class.
@@ -36,7 +38,20 @@ $routes->set404Override();
 
 // We get a performance increase by specifying the default
 // route since we don't have to scan directories.
-$routes->get('/', 'Home::index');
+// $routes->get('/', 'Home::index');
+// $routes->get('pages', [Pages::class, 'index']);
+// $routes->get('(:segment)', [Pages::class, 'view']);
+
+// $routes->get('/', 'Home::index');
+$routes->get('/', 'Pages::view');
+$routes->get('user/(:segment)', [UserController::class, 'view']);
+$routes->get('user', [UserController::class, 'index']);
+// $routes->get('auth/(:segment)', [AuthController::class, 'view']);
+// $routes->get('register', [AuthController::class, 'register']);
+// $routes->post('process-login', [AuthController::class, 'login']);
+$routes->match(['get', 'post'], 'login', [AuthController::class, 'login']);
+$routes->match(['get', 'post'], 'register', [AuthController::class, 'register']);
+$routes->get('logout', [AuthController::class, 'logout']);
 $routes->get('pages', [Pages::class, 'index']);
 $routes->get('(:segment)', [Pages::class, 'view']);
 

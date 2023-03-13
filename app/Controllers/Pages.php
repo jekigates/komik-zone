@@ -1,8 +1,7 @@
 <?php
 
 namespace App\Controllers;
-
-use CodeIgniter\Exceptions\PageNotFoundException; // Add this line
+use CodeIgniter\Exceptions\PageNotFoundException;
 
 class Pages extends BaseController
 {
@@ -13,15 +12,23 @@ class Pages extends BaseController
 
     public function view($page = 'home')
     {
-        if (! is_file(APPPATH . 'Views/pages/' . $page . '.php')) {
+        $folder_name = 'pages/';
+
+        if ($page === 'login' || $page === 'register') {
+            helper('form');
+
+            $folder_name = 'auth/';
+        }
+        
+        if (! is_file(APPPATH . 'Views/' . $folder_name . $page . '.php')) {
             // Whoops, we don't have a page for that!
             throw new PageNotFoundException($page);
         }
 
-        $data['title'] = ucfirst($page); // Capitalize the first letter
+        $data['title'] = ucwords(str_replace('_', ' ', $page));
 
         return view('templates/header', $data)
-            . view('pages/' . $page)
+            . view($folder_name . $page)
             . view('templates/footer');
     }
 }
