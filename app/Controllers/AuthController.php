@@ -20,7 +20,7 @@ class AuthController extends BaseController
                 . view('templates/footer');
         }
 
-        $post = $this->request->getPost(['name', 'email', 'password']);
+        $post = $this->request->getPost(['email', 'password']);
 
         // // Checks whether the submitted data passed the validation rules.
         if (! $this->validateData($post, [
