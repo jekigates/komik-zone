@@ -1,3 +1,7 @@
+<?php
+    $title = $title ?? 'KomikZone';
+?>
+
 <!doctype html>
 <html>
 <head>
@@ -121,7 +125,7 @@
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav mx-auto my-2 my-lg-0">
                         <li class="nav-item me-lg-4">
-                            <a class="nav-link <?= ($title == 'Home') ? 'active' : '' ?>" aria-current="page" href="<?= site_url() ?>">Home</a>
+                            <a class="nav-link <?= ($title == 'Home') ? 'active' : '' ?>" aria-current="page" href="<?= url_to('') ?>">Home</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link <?= ($title == 'Daftar Komik') ? 'active' : '' ?>" href="<?= site_url('daftar_komik') ?>">Daftar Komik</a>
@@ -145,19 +149,19 @@
             <div class="container-fluid container-lg">
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav ms-auto my-2 my-lg-0">
-                        <?php if (!session()->has('user')) : ?>
-                            <li class="nav-item me-lg-2 mb-3 mb-lg-0">
-                                <a class="nav-link btn btn-primary text-white px-3" href="<?= site_url('login') ?>">Login</a>
+                        <?php if(logged_in()) : ?>
+                            <li class="nav-item">
+                                <a class="nav-link px-3" href=""><?= user()->username ?></a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link btn btn-outline-primary text-primary px-3" href="<?= site_url('register') ?>">Register</a>
+                                <a class="nav-link btn btn-danger text-white px-3" href="<?= url_to('logout') ?>">Logout</a>
                             </li>
-                        <?php else : ?>
+                        <?php else: ?>
                             <li class="nav-item me-lg-2 mb-3 mb-lg-0">
-                                <a class="nav-link px-3" href="<?= site_url('/') ?>"><?= session()->get('user')['name'] ?></a>
+                                <a class="nav-link btn btn-primary text-white px-3" aria-current="page" href="<?= url_to('login') ?>">Login</a>
                             </li>
-                            <li class="nav-item me-lg-2">
-                                <a class="nav-link btn btn-danger text-white px-3" href="<?= site_url('logout') ?>">Logout</a>
+                            <li class="nav-item">
+                                <a class="nav-link btn btn-outline-primary text-primary px-3" href="<?= url_to('register') ?>">Register</a>
                             </li>
                         <?php endif ?>
                     </ul>

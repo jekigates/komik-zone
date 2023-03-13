@@ -84,15 +84,15 @@
                             <div>
                                 <div class="d-flex justify-content-between">
                                     <a href="" class="text-decoration-none text-primary">Chapter 76</a>
-                                    <p class="mb-2 text-black-50">30 menit lalu</p>
+                                    <p class="mb-2 text-secondary">30 menit lalu</p>
                                 </div>
                                 <div class="d-flex justify-content-between">
                                     <a href="" class="text-decoration-none text-primary">Chapter 75</a>
-                                    <p class="mb-2 text-black-50">Mar 4, 2023</p>
+                                    <p class="mb-2 text-secondary">Mar 4, 2023</p>
                                 </div>
                                 <div class="d-flex justify-content-between">
                                     <a href="" class="text-decoration-none text-primary">Chapter 74</a>
-                                    <p class="mb-0 text-black-50">Feb 25, 2023</p>
+                                    <p class="mb-0 text-secondary">Feb 25, 2023</p>
                                 </div>
                             </div>
                         </div>
@@ -123,15 +123,15 @@
                             <div>
                                 <div class="d-flex justify-content-between">
                                     <a href="" class="text-decoration-none text-primary">Chapter 128</a>
-                                    <p class="mb-2 text-black-50">4 jam lalu</p>
+                                    <p class="mb-2 text-secondary">4 jam lalu</p>
                                 </div>
                                 <div class="d-flex justify-content-between">
                                     <a href="" class="text-decoration-none text-primary">Chapter 127</a>
-                                    <p class="mb-2 text-black-50">Mar 2, 2023</p>
+                                    <p class="mb-2 text-secondary">Mar 2, 2023</p>
                                 </div>
                                 <div class="d-flex justify-content-between">
                                     <a href="" class="text-decoration-none text-primary">Chapter 126</a>
-                                    <p class="mb-0 text-black-50">Feb 18, 2023</p>
+                                    <p class="mb-0 text-secondary">Feb 18, 2023</p>
                                 </div>
                             </div>
                         </div>
@@ -162,15 +162,15 @@
                             <div>
                                 <div class="d-flex justify-content-between">
                                     <a href="" class="text-decoration-none text-primary">Chapter 1077</a>
-                                    <p class="mb-2 text-black-50">1 hari lalu</p>
+                                    <p class="mb-2 text-secondary">1 hari lalu</p>
                                 </div>
                                 <div class="d-flex justify-content-between">
                                     <a href="" class="text-decoration-none text-primary">Chapter 1076</a>
-                                    <p class="mb-2 text-black-50">1 hari lalu</p>
+                                    <p class="mb-2 text-secondary">1 hari lalu</p>
                                 </div>
                                 <div class="d-flex justify-content-between">
                                     <a href="" class="text-decoration-none text-primary">Chapter 1075</a>
-                                    <p class="mb-0 text-black-50">Feb 16, 2023</p>
+                                    <p class="mb-0 text-secondary">Feb 16, 2023</p>
                                 </div>
                             </div>
                         </div>
@@ -201,15 +201,15 @@
                             <div>
                                 <div class="d-flex justify-content-between">
                                     <a href="" class="text-decoration-none text-primary">Chapter 230</a>
-                                    <p class="mb-2 text-black-50">14 jam lalu</p>
+                                    <p class="mb-2 text-secondary">14 jam lalu</p>
                                 </div>
                                 <div class="d-flex justify-content-between">
                                     <a href="" class="text-decoration-none text-primary">Chapter 239</a>
-                                    <p class="mb-2 text-black-50">14 jam lalu</p>
+                                    <p class="mb-2 text-secondary">14 jam lalu</p>
                                 </div>
                                 <div class="d-flex justify-content-between">
                                     <a href="" class="text-decoration-none text-primary">Chapter 228</a>
-                                    <p class="mb-0 text-black-50">Feb 22, 2023</p>
+                                    <p class="mb-0 text-secondary">Feb 22, 2023</p>
                                 </div>
                             </div>
                         </div>
@@ -240,15 +240,15 @@
                             <div>
                                 <div class="d-flex justify-content-between">
                                     <a href="" class="text-decoration-none text-primary">Chapter 76</a>
-                                    <p class="mb-2 text-black-50">Mar 6, 2023</p>
+                                    <p class="mb-2 text-secondary">Mar 6, 2023</p>
                                 </div>
                                 <div class="d-flex justify-content-between">
                                     <a href="" class="text-decoration-none text-primary">Chapter 75</a>
-                                    <p class="mb-2 text-black-50">Feb 6, 2023</p>
+                                    <p class="mb-2 text-secondary">Feb 6, 2023</p>
                                 </div>
                                 <div class="d-flex justify-content-between">
                                     <a href="" class="text-decoration-none text-primary">Chapter 74</a>
-                                    <p class="mb-0 text-black-50">Jan 23, 2023</p>
+                                    <p class="mb-0 text-secondary">Jan 23, 2023</p>
                                 </div>
                             </div>
                         </div>
@@ -279,15 +279,15 @@
                             <div>
                                 <div class="d-flex justify-content-between">
                                     <a href="" class="text-decoration-none text-primary">Chapter 253</a>
-                                    <p class="mb-2 text-black-50">18 jam lalu</p>
+                                    <p class="mb-2 text-secondary">18 jam lalu</p>
                                 </div>
                                 <div class="d-flex justify-content-between">
                                     <a href="" class="text-decoration-none text-primary">Chapter 252</a>
-                                    <p class="mb-2 text-black-50">3 hari lalu</p>
+                                    <p class="mb-2 text-secondary">3 hari lalu</p>
                                 </div>
                                 <div class="d-flex justify-content-between">
                                     <a href="" class="text-decoration-none text-primary">Chapter 251</a>
-                                    <p class="mb-0 text-black-50">Mar 5, 2023</p>
+                                    <p class="mb-0 text-secondary">Mar 5, 2023</p>
                                 </div>
                             </div>
                         </div>
