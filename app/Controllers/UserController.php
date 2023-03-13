@@ -2,38 +2,52 @@
 
 namespace App\Controllers;
 
-use App\Models\UserModel;
+use CodeIgniter\Exceptions\PageNotFoundException;
+use Myth\Auth\Models\UserModel;
+use App\Config\Auth as AuthConfig;
 
 class UserController extends BaseController
 {
+    /**
+     * @var AuthConfig
+     */
+    protected $config;
+
+    public function __construct()
+    {
+        $this->config = config('Auth');
+    }
+
     public function index()
     {
         $model = model(UserModel::class);
 
         $data = [
-            'users' => $model->getUsers(),
+            'config' => $this->config,
+            'users' => $model->findAll(),
             'title' => 'User List',
         ];
 
-        return view('templates/header', $data)
-            . view('pages/user/index')
-            . view('templates/footer');
+        return view('pages/user/index', $data);
     }
 
     public function view($id = null)
     {
         $model = model(UserModel::class);
         
-        $data['user'] = $model->getUsers($id);
-        
-        if (empty($data['user'])) {
-            throw new PageNotFoundException('Cannot find the user with ID: ' . $id);
-        } 
-        
-        $data['title'] = $data['user']['name'];
+        $data = [
+            'config' => $this->config,
+            'title' => 'User List',
+            'user' => $model->find($id),
+        ];
 
-        return view('templates/header', $data)
-            . view('pages/user/view')
-            . view('templates/footer');
+        if (empty($data['user'])) {
+            // return "bro";
+            throw new \CodeIgniter\Exceptions\PageNotFoundException('Sorry, the news item you requested could not be found.');
+
+            // throw new PageNotFoundException('Cannot find the user with ID: ' . $id);
+        } 
+
+        return view('pages/user/view', $data);
     }
 }

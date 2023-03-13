@@ -1,7 +1,7 @@
 <?php
 
 namespace Config;
-// use App\Controllers\UserController;
+use App\Controllers\UserController;
 use App\Controllers\AuthController;
 use App\Controllers\Pages;
 
@@ -28,7 +28,7 @@ $routes->set404Override();
 // where controller filters or CSRF protection are bypassed.
 // If you don't want to define all routes, please use the Auto Routing (Improved).
 // Set `$autoRoutesImproved` to true in `app/Config/Feature.php` and set the following to true.
-// $routes->setAutoRoute(false);
+$routes->setAutoRoute(false);
 
 /*
  * --------------------------------------------------------------------
@@ -47,6 +47,8 @@ $routes->get('activate-account', [AuthController::class, 'activateAccount']);
 $routes->get('resend-activate-account', [AuthController::class, 'resendActivateAccount']);
 $routes->get('forgot', [AuthController::class, 'forgotPassword']);
 $routes->get('reset-password', [AuthController::class, 'resetPassword']);
+$routes->get('user/(:segment)', [UserController::class, 'view']);
+$routes->get('user', [UserController::class, 'index']);
 $routes->get('pages', [Pages::class, 'index']);
 $routes->get('(:segment)', [Pages::class, 'view']);
 
